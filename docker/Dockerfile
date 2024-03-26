@@ -1,4 +1,4 @@
-FROM carlasim/carla:0.9.13
+FROM carlasim/carla:latest
 
 # Docker実行してシェルに入ったときの初期ディレクトリ（ワークディレクトリ）の設定
 WORKDIR /root/
