@@ -1,5 +1,5 @@
 NAME=dockercarla
-VERSION=latest
+VERSION=0.9.15
 
 build:
 	docker build -t $(NAME):$(VERSION) .
@@ -8,7 +8,7 @@ xhost:
 	xhost +local:root
 
 start:
-	docker run -it \
+	docker run -it -u carla \
     	--env="DISPLAY=$(DISPLAY)" \
 	-e SDL_VIDEODRIVER=x11 \
 	-e XAUTHORITY=$XAUTHORITY \
