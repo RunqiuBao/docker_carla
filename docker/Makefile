@@ -19,7 +19,7 @@ start:
 	-e XAUTHORITY=$XAUTHORITY \
 	--volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     	--volume="$(pwd)/../carla-scripts:/root/code/carla-scripts:rw" \
-    	--volume="/mnt/data:/root/data:rw" \
+    	--volume="/home/runqiu/datasets:/root/data:rw" \
     	--name=dockercarla \
 	--gpus 'all,"capabilities=graphics,utility,display,video,compute"' \
 	-p 2000-2002:2000-2002 $(NAME):$(VERSION) \

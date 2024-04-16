@@ -7,5 +7,5 @@
   - `pip3 install /home/carla/PythonAPI/carla/dist/carla-0.9.15-cp37-cp37m-manylinux_2_27_x86_64.whl`
 - TO access container using ssh:
   - in container, launch ssh server: `service ssh start`
-  - in host machine, `ssh root@localhost -p 2222`, password is root123 defined in Makefile.
+  - in host machine, `ssh root@localhost -p 2222`, password is root123 defined in Dockerfile.
   - use nautilus: `nautilus ssh://root@localhost:2222`
